@@ -30,13 +30,13 @@ hashtag_matches = pat.findall(tweet_string)
 if __name__ == "__main__":
     print("<<<<< Date Problem >>>>>\n")
     # uncomment the following prints to see date results and asserts to test
-    # print(f"month is: {date_matches.group(1)}!") # should print "month is: November"
-    # print(f"day is: {date_matches.group(2)}!")   # should print "day is: 9"
-    # print(f"year is: {date_matches.group(3)}!")  # should print "year is: 1982"
-    # assert date_matches.group(1) == 'November', "Incorrect month"
-    # assert date_matches.group(2) == '9', "Incorrect day"
-    # assert date_matches.group(3) == '1982', "Incorrect year"
-    # print('\n<<<< Date extraction tests passed >>>>\n')
+    print(f"month is: {date_matches.group(1)}!") # should print "month is: November"
+    print(f"day is: {date_matches.group(2)}!")   # should print "day is: 9"
+    print(f"year is: {date_matches.group(3)}!")  # should print "year is: 1982"
+    assert date_matches.group(1) == 'November', "Incorrect month"
+    assert date_matches.group(2) == '9', "Incorrect day"
+    assert date_matches.group(3) == '1982', "Incorrect year"
+    print('\n<<<< Date extraction tests passed >>>>\n')
 
     print("<<<<< Address Problem >>>>>\n")
     # uncomment the following prints to see results and asserts to test
